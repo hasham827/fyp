@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fyp/student/marks.dart';
 import 'file:///C:/Users/LAPTOPS%20PENTAGON/Downloads/fyp/lib/student/stdntlogin.dart';
 var green = Color(0xFF4caf6a);
 var greenLight = Color(0xFFd8ebde);
@@ -274,7 +275,10 @@ class _infoState extends State<info> {
                             color: greenLight,
                             child: InkWell(
                               onTap: () {
-
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => marks()));
                               },
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
