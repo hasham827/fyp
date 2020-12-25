@@ -27,6 +27,7 @@ class _StudentState extends State<Student> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
         body:
             Column(
               children:<Widget>[
@@ -41,7 +42,7 @@ class _StudentState extends State<Student> {
               gradient: LinearGradient(
                   begin: Alignment.topRight,
                   end: Alignment.centerLeft,
-                  colors: [Color(0xFF6A1B9A),Color(0xFF6A1B9A),Color(0xFF42A5F5),]
+                  colors: [Color(0xFF42A5F5),Color(0xFF6A1B9A),Color(0xFF6A1B9A),Color(0xFF6A1B9A),Color(0xFF42A5F5),]
               ),
             ),
         child:Column(
@@ -82,7 +83,7 @@ class _StudentState extends State<Student> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             Text(
-                              'Name: Jutt Shab',
+                              'Name: Nouman Tahir' '\nRegistraion: SP17-BCS-046' '\nProgram: Computer Science',
                               style: TextStyle(
                                   color: Colors.white, fontWeight: FontWeight.w500),
                             ),
@@ -90,11 +91,6 @@ class _StudentState extends State<Student> {
                             SizedBox(
                               height: 10.0,
                             ),
-                            Text(
-                              'Regis: SP17-BCS-046',
-                              style: TextStyle(
-                                  color: Colors.white, fontWeight: FontWeight.w500),
-                            )
                           ],
                         ),
                       ),
@@ -343,42 +339,6 @@ class _StudentState extends State<Student> {
                       ),
                     ),
                   ),
-                  // ClipRRect(
-                  //   borderRadius: BorderRadius.only(
-                  //     topLeft: Radius.circular(15.0),
-                  //     topRight: Radius.circular(15.0),
-                  //     bottomRight: Radius.circular(15.0),
-                  //   ),
-                  //   child: Container(
-                  //     height: 92.0,
-                  //     width: 104.0,
-                  //     color: blueLight,
-                  //     child: InkWell(
-                  //       onTap: () {
-                  //         Scaffold.of(context).showSnackBar(SnackBar(
-                  //           content: Text('Not Available'),
-                  //         ));
-                  //       },
-                  //       child: Column(
-                  //         mainAxisAlignment: MainAxisAlignment.center,
-                  //         children: <Widget>[
-                  //           Icon(
-                  //             Icons.check_circle,
-                  //             color: blue,
-                  //           ),
-                  //           SizedBox(
-                  //             height: 4.0,
-                  //           ),
-                  //           Text(
-                  //             'Attendance',
-                  //             style: TextStyle(
-                  //                 color: blue, fontWeight: FontWeight.w500),
-                  //           )
-                  //         ],
-                  //       ),
-                  //     ),
-                  //   ),
-                  // ),
                 ],
               ),
             ),
@@ -392,7 +352,9 @@ class _StudentState extends State<Student> {
                       borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(60),
                           bottomRight: Radius.circular(60)
+
                       ),
+
                     ),
                     child:Column(
                       mainAxisAlignment: MainAxisAlignment.start,
