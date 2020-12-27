@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-//import 'package:flutter_login_signup/src/signup.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:fyp/src/Widget/bezierContainer.dart';
-
+import 'package:fyp/teacher/screens/teacherinfo.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage({Key key, this.title}) : super(key: key);
@@ -56,7 +54,14 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Widget _submitButton() {
-    return Container(
+
+    return InkWell(
+        onTap: () {
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => tinfo()));
+    },
+
+    child: Container(
       height: 50,
       width: 200,
       //padding: EdgeInsets.symmetric(vertical: 15),
@@ -80,6 +85,7 @@ class _LoginPageState extends State<LoginPage> {
         'Login',
         style: TextStyle(fontSize: 15, color: Colors.white),
       ),
+    ),
     );
   }
   Widget _title() {

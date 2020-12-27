@@ -37,6 +37,16 @@ dependencies:
   url_launcher: ^5.4.0
   flutter_webview_plugin: 0.3.11
   flutter_plugin_pdf_viewer: any
+  flutter_custom_clippers: ^1.1.0
+  flutter_villains: "^1.2.1"
+  flutter_icons: ^0.3.1
+  http: ^0.12.0+2
+  flushbar: ^1.9.1
+  shared_preferences: ^0.5.4+5
+  collection: ^1.14.11
+  grouped_buttons: ^1.0.4
+  charts_flutter: ^0.8.1
+  flutter_launcher_icons: "^0.7.3"
 
 dev_dependencies:
   flutter_test:

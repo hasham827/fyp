@@ -82,7 +82,7 @@ class _marksState extends State<marks> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
                                   Text(
-                                    'Name: Shazaib Ali Shah' '\nRegistraion: SP17-BCS-069' '\nProgram: Computer Science',
+                                    'Name: Shazaib Ali Shah' '\nRegistraion: SP17-BCS-068' '\nProgram: Computer Science',
                                     style: TextStyle(
                                         color: Colors.white, fontWeight: FontWeight.w500),
                                   ),
